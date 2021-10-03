@@ -1,0 +1,138 @@
+<!-- 
+3-указание общей площади (вводится максимальное значение) -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Подбор квартиры</title>
+</head>
+<body>
+	<h2>Подбор квартиры:</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="district">Введите район или название улицы</label>
+            <input autofocus id="district" type="text" name="district" placeholder="Например, улица Мира">
+        </div>
+    	<div>
+    		<label for="metro">Выберите станцию метро</label>
+    		<select  id="metro" name="metro">
+                   <option value="0" selected>Не выбрано</option>
+    		       <optgroup label="Выборгский район">
+    		   	   <option value="1">Парнас</option>
+    		   	   <option value="2">Проспект просвящения</option>
+    		   	   <option value="3">Озерки</option>
+    		   	   <option value="4">Удельная</option>
+    		   	   <option value="5">Лесная</option>
+    		   	   <option value="6">Выборгская</option>
+    		   </optgroup>	
+    		    <optgroup label="Приморский район">
+    		   	   <option value="7">Комменданский проспект</option>
+    		   	   <option value="8">Старая деревня</option>
+    		   	   <option value="9">Пионерская</option>
+    		   	   <option value="10">Черная речка</option>
+    		   </optgroup>	
+    		    <optgroup label="Петроградский район">
+    		   	   <option value="11">Крестовский остров</option>
+    		   	   <option value="12">Чкаловская</option>
+    		   	   <option value="13">Спортивная</option>
+    		   	   <option value="14">Петроградская</option>
+    		   	   <option value="15">Горьковская</option>
+    		   </optgroup>	
+    		</select>
+    	</div>
+    	<div>
+    		<label for="kolichestvo">Выберите количесво комнат</label>
+    		<select id="kolichestvo" name="kolichestvo">
+                <option value="0" selected>Не выбрано</option>
+    			<option value="1" >Студия</option>
+    			<option value="2">1 комната</option>
+    			<option value="3">2 комнаты</option>
+    			<option value="4">3 комнаты</option>
+    			<option value="5">4+ комнат</option>
+    		</select>
+    	</div>
+        <div>
+            <label for="zena">
+                  Выберите максимальную стоимость
+                  <input type="range" step="50000" min="0" max="20000000" value="zena" id="zena" name="zena">
+                  <!-- Я так поняла, чтобы выводилось значение в ползунке и, чтобы привязать поле ввода, нужен js  -->
+                  <input id="zena" type="number" name="zena" value="zena" placeholder="Стоимость" step="50000" min="0">
+            </label>
+        </div>
+        <div>
+            <label for="floor">Выберите этаж:</label>
+            <select id="floor" name="floor">
+                <option value="0" selected>Не выбрано</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+            <label>
+                Не первый
+                <input type="checkbox" name="floor[]" value="ne1"> 
+            </label>
+            <label>
+                Не последний
+                <input type="checkbox" name="floor[]" value="ne2">
+            </label>
+        </div>
+        <div>
+            <label for="year">Выберите год сдачи дома:</label>
+            <select id="year" name="year">
+                <option value="0" selected>Не выбранно</option>
+                <option value="1">До 2000г</option>
+                <option value="2">От 2000г до 2018г</option>
+                <option value="3">От 2018г</option>
+                </select>
+        </div>
+        <div>
+            <label for="square">Введите максимальную площадь:</label>
+            <input id="square" type="number" name="square" value="square" placeholder="Например, 32">
+        </div>
+    	 <div>
+            <h4>Выберите класс:</h4>
+            <label>
+                Бизнес-класс
+                <input type="checkbox" name="class[]" value="biz"> 
+            </label>
+            <label>
+                Премиум
+                <input type="checkbox" name="class[]" value="prem">
+            </label>
+            <label>
+                Deluxe
+                <input type="checkbox" name="classl[]" value="deluxe"> 
+            </label>
+        </div>
+         <div>
+            <label>
+                С отделкой
+                <input type="radio" name="finishing" value="1" checked>
+            </label>
+            <label>
+                Без отделки
+                <input type="radio" name="finishing" value="1">
+            </label>
+        </div>
+         <div>
+            <label>
+                С террасой
+                <input type="radio" name="ter" value="1" checked>
+            </label>
+            <label>
+                Без террасы
+                <input type="radio" name="ter" value="2">
+            </label>
+        </div>
+        <input type="reset" value="Очистить">
+        <input type="submit" value="Подбор">
+    </form>
+</body>
+</html>
