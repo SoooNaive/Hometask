@@ -1,0 +1,145 @@
+@import "flex-grid.css";
+.brand {
+  color: #000080;
+  font-size: 15pt;
+}
+
+.head {
+  background-color: #D8BFD8;
+  padding: 10px 0px;
+}
+
+body {
+	background: url(../img/6.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    margin: 0;
+}
+
+.nav a{
+text-decoration: none;
+color: #000080;
+font-size: 15pt;
+}
+
+aside{
+  background-color: #FFE4E1;
+}
+
+.link>a{
+  text-align: center;
+  border: 1px solid #D8BFD8;
+  background-color: #D8BFD8;
+  color: #000080;
+}
+
+.con {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.box{
+background-color: #FFF0F5;
+color: #000080;
+padding:10px 10px 10px;
+}
+
+.box div{
+  display: flex;
+    flex-direction: column;
+}
+.box div a{
+  text-decoration: none;
+}
+.box p{
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+}
+
+.box h3 {
+	 text-align: center;
+}
+
+.gap{
+	grid-gap: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ .img img {
+width: 100%;
+height: 100%;
+}
+
+.align{
+align-items: center;
+}
+
+.ml {
+	margin-left: 5px;
+}
+
+.mr {
+	margin-right: 5px;
+}
+
+.mb {
+	margin-bottom: 10px;
+}
+
+.mt {
+	margin-top: 10px;
+}
+.size {
+	height: 15%;
+}
+
+.img5 img{
+	height: 100%;
+    width: 100%;
+}
+
+.footer {
+	height: 100px;
+	background-color: #D8BFD8;
+    padding: 10px 0px;
+}
+
+.h2 {
+	 text-align: center;
+}
+
+/*Меню колонка*/
+.menu a {
+	font-size: 15pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #000080;
+	text-decoration: none;
+	text-align: center;
+	background-color: transparent;
+}
+
+.menu a:hover {
+	background-color:  #D8BFD8;
+}
+
+.menu {
+	justify-content: center;
+	margin: 0;
+}
+
+/*Меню строчка*/
+.menu2 a{
+font-size: 15pt;
+padding: 1% 4%;
+color: #000080;
+text-align: center;
+text-decoration: none
+}
+
+.menu2 a:hover{
+  background-color: #FFE4E1;
+}
+
