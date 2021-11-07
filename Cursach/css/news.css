@@ -1,0 +1,73 @@
+@import "style.css";
+@import "flex-grid.css";
+
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    justify-content: center;
+} 
+
+
+.similar {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+.item img {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.item h1 {
+    text-transform: uppercase;
+    color: #efd0bc;
+}
+.item a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF0F5;
+    border: 1px solid  #efd0bc;
+    background-color: #efd0bc;
+    border-radius: 20px;
+    padding: 5px;
+    padding: .5rem 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.item a:hover {
+	background-color: #E9967A;
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .similar {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .similar {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media screen and (min-width: 1300px) {
+   .item:hover img {
+    transform: scale(1.2);
+    transition: transform 2s linear;
+}
+    /*.item div {
+    overflow: hidden; 
+}*/
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="scroll-elem" lang="ru">
+<head>
+	<meta charset="utf-8">
+   <script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+   <div class="link">
+      <a href="index.html"><i class="fas fa-arrow-left"></i>ᅠBack</a>
+   </div>
+   <form>
+   	<div>
+   		<label for="name">Nameᅠ ᅠ</label>
+   		<input id="name" type="text" placeholder="Instance, Jane" required name="name">
+   	</div>
+   	<div>
+   		<label for="surname">Surnameᅠ</label>
+   		<input id="surname" type="text" placeholder="Instance, Doe" required name="surname">
+   	</div>
+      <div>
+          <label for="email">Emailᅠᅠ</label>
+         <input id="email" type="text"  placeholder="Instance, Jane@mail.ru" required name="email">
+      </div>
+   	<div>
+   		<label for="login">Loginᅠᅠ</label>
+   		<input id="login" type="text" placeholder="Instance, Jane_2001" required name="login">
+   	</div>
+   	<div>
+   		 <label for="password">Passwordᅠ</label>
+   		<input id="password" type="password" placeholder="Instance, Password" required minlength="6" name="password">
+   	</div>
+   
+   	<div>
+        <input id="remember" type="checkbox" name="remember" checked value="remember" class="custom">
+        <label class="remember-label" for="remember">Remember</label>
+      </div>
+      <div>
+         <input class="sing" type="submit" value="Sing in">
+         <div class="back">
+         <a href="index.html">Back</a>
+         </div>
+      </div>
+   </form>
+</body>
+</html>

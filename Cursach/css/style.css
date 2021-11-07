@@ -1,0 +1,81 @@
+@import "flex-grid.css";
+
+.scroll-elem {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.scroll-elem::-webkit-scrollbar {
+    width: 10px;
+}
+.scroll-elem::-webkit-scrollbar-thumb {
+    background-color: #efd0bc;
+    border-radius: 5px;
+}
+
+body {
+  margin: 0;
+} 
+
+html {
+  font-size: 20px;
+}
+
+.menu,
+.nav {
+  display: flex;
+}
+
+.nav > a {
+  flex: 1;
+  color: #2F4F4F;
+  margin: 0 auto;
+  text-decoration: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+
+.translate:hover {
+  transform: translateY(.5rem);
+  color: #3d3d5c;
+}
+
+.menu > p {
+   font-family: "Mistral" Cursive;
+}
+
+img {
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 10rem;
+  padding-top: 6rem;
+}
+
+.nav2,
+.footer {
+  display: flex;
+  padding-left: 3rem;
+}
+
+.nav2 > a {
+  flex: 1;
+  font-size: 30px;
+  color: #3d3d5c;
+}
+
+.nav2 a:hover {
+  color: #E9967A;
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+ .nav > a {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 2rem;
+}
+}
+
